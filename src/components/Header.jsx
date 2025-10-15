@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/images/logo.svg";
+import logo from "@/images/logo.svg";
 import { FaBuilding, FaSignInAlt, FaSignOutAlt, FaUser } from "react-icons/fa";
 
 const Header = () => {
@@ -42,10 +42,16 @@ const Header = () => {
           </div>
           <div className="ml-auto">
             <div className="ml-4 flex items-center md:ml-6">
-              <Link href="/" className="mr-3 text-gray-800 hover:text-gray-600">
+              <Link
+                href="/login"
+                className="mr-3 text-gray-800 hover:text-gray-600"
+              >
                 <FaSignInAlt className="inline mr-1" /> Login
               </Link>
-              <Link href="/" className="mr-3 text-gray-800 hover:text-gray-600">
+              <Link
+                href="/register"
+                className="mr-3 text-gray-800 hover:text-gray-600"
+              >
                 <FaUser className="inline mr-1" /> Register
               </Link>
               <Link href="/" className="mr-3 text-gray-800 hover:text-gray-600">
